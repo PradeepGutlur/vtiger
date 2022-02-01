@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [crossbrowser]" parallel="tests">
+  <test thread-count="2" name="Testrunner-firefox(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.vtiger.comcast.contact.test.Create_contact_Test">
+        <methods>
+          <include name="configsBS"/>
+          <include name="configAS"/>
+          <include name="configAC"/>
+          <include name="configAM"/>
+          <include name="configBM"/>
+          <include name="createContactTest"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.vtiger.comcast.contact.test.Create_contact_Test -->
+    </classes>
+  </test> <!-- Testrunner-firefox(failed) -->
+</suite> <!-- Failed suite [crossbrowser] -->

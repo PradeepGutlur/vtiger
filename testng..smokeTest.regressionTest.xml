@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<groups>
+<run>
+<include name="smokeTest"></include>
+<include name="regressionTest"></include>
+</run>
+</groups>
+  <test thread-count="1" name="Test">
+    <classes>
+      <class name="com.vtiger.comcast.contact.test.Create_contact_Test"/>
+      <class name="com.vtiger.comcast.organizationtest.CreateOrgTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

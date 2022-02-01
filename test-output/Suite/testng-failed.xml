@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="smokeTest"/>
+        <include name="regressionTest"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.vtiger.comcast.organizationtest.CreateOrgTest">
+        <methods>
+          <include name="createOrgTest"/>
+          <include name="createOrgWithIndu"/>
+          <include name="configsBS"/>
+          <include name="configAS"/>
+          <include name="configAC"/>
+          <include name="configAM"/>
+          <include name="configBM"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.vtiger.comcast.organizationtest.CreateOrgTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

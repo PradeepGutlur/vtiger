@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="crossbrowser" parallel="tests">
+
+  <test thread-count="2" name="Testrunner-firefox" parallel="tests">
+  <parameter name="browser" value="firefox"></parameter>
+    <classes>
+      <class name="com.vtiger.comcast.contact.test.Create_contact_Test"/>
+      <class name="com.vtiger.comcast.organizationtest.CreateOrgTest"/>
+    </classes>
+    </test>
+ <test thread-count="2" name="Testrunner-chrome" parallel="tests">
+    <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="com.vtiger.comcast.contact.test.Create_contact_Test"/>
+      <class name="com.vtiger.comcast.organizationtest.CreateOrgTest"/>
+    </classes>
+  </test>  
+  
+ 
+</suite> <!-- Suite -->
