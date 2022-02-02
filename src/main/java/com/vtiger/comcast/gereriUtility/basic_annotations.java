@@ -9,6 +9,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 
 import com.vtiger.comcast.business.gerenic.Home;
@@ -23,7 +24,7 @@ public class basic_annotations {
 	
 
 	public WebDriver driver = null;
-	public static WebDriver sdriver = null;
+	//public static WebDriver sdriver = null;
 	
 	public ExeclUtility elib = new ExeclUtility();
 	public JavaUtility jlib = new JavaUtility();
@@ -50,7 +51,7 @@ public class basic_annotations {
 		{
 			driver = new FirefoxDriver();
 		}
-		driver = sdriver;
+		//driver = sdriver;
     	
     }
    @BeforeMethod(groups={"smokeTest","regressionTest"})
@@ -62,6 +63,7 @@ public class basic_annotations {
 		
 		driver.get(url);
 		wlib.waitUntilPageLoad(driver);
+	
 		Login lp = new Login(driver);
 		lp.loginToApp(username, password);
 		
@@ -83,6 +85,22 @@ public class basic_annotations {
    public void configAS() {
 	   System.out.println("=====close the DB=======");
    }
+   @DataProvider
+	public  Object[][] createwithdata() throws Throwable {
+		ExeclUtility elib = new ExeclUtility();
+		int rowcount = elib.getRowcount("Sheet2");
+		Object[][] abjarr = new Object[rowcount][2];
+		for(int i =0 ; i<rowcount; i++)
+		{
+		JavaUtility jlib = new JavaUtility();
+			int radnum = jlib.getRandomNumber();
+		  abjarr[i][0]= elib.getDataFromExecl("Sheet2", i, 0)+radnum;
+		  abjarr[i][1]= elib.getDataFromExecl("Sheet2", i, 1);
+			
+		}
+		return abjarr;
+	
+	}
    
 
 }

@@ -6,7 +6,7 @@
 <include name="smokeTest"></include>
 </run>
 </groups>
-  <test thread-count="2" name="Test">
+  <test  name="Test">
     <classes>
       <class name="com.vtiger.comcast.contact.test.Create_contact_Test"/>
       <class name="com.vtiger.comcast.organizationtest.CreateOrgTest"/>

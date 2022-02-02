@@ -26,6 +26,8 @@ import com.vtiger.comcast.gereriUtility.basic_annotations;
 public class CreateOrgTest extends basic_annotations {
 	
 	
+	private static final String IndutrsyType = null;
+
 	@Test(groups={"smokeTest"})
 	public void createOrgTest() throws Throwable {
 	
@@ -75,7 +77,7 @@ public class CreateOrgTest extends basic_annotations {
 
 	//step 5 create org 
 	CreatenewOrganization corg =new CreatenewOrganization(driver);
-	corg.createOrg_with_Indurty(orgName);
+	corg.createOrg_with_Indurty(orgName,IndutrsyType );
 
 	//step 6 verify the create org
 	OrganizationInfo orginf = new OrganizationInfo(driver);
@@ -83,5 +85,27 @@ public class CreateOrgTest extends basic_annotations {
 	assertTrue(act_msg.contains(orgName));
 	
 	}
+	@Test(dataProvider="createwithdata")
+	public void createorg(String orgName, String IndutrsyType) throws Throwable {
+
+		//step 3 navigate to org
+		Home hp = new Home(driver);
+		hp.getOrganizationLnk().click();
+		
+		//step 4 navigate to organiztion page
+		Organization org = new Organization(driver);
+		org.getCreateorgIcon().click();
+		
+		CreatenewOrganization corg =new CreatenewOrganization(driver);
+		corg.createOrg_with_Indurty(orgName, IndutrsyType);
+		
+		
+		
+		OrganizationInfo orginf = new OrganizationInfo(driver);
+		String act_msg = orginf.getSuccesfullMsg().getText();
+		assertTrue(act_msg.contains(orgName));
+		
 	
+	
+	}
 }

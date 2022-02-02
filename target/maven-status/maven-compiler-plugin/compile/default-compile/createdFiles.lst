@@ -6,6 +6,7 @@ com\vtiger\comcast\business\gerenic\Contact_info_page.class
 com\vtiger\comcast\gereriUtility\basic_annotations.class
 com\vtiger\comcast\gereriUtility\FileUtilfiy.class
 com\vtiger\comcast\gereriUtility\WebDriverUtility.class
+com\vtiger\comcast\gereriUtility\RetryImpClass.class
 com\vtiger\comcast\business\gerenic\Contact_page.class
 com\vtiger\comcast\business\gerenic\Home.class
 com\vtiger\comcast\gereriUtility\ExeclUtility.class

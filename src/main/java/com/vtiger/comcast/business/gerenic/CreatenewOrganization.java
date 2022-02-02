@@ -1,9 +1,11 @@
 package com.vtiger.comcast.business.gerenic;
 
+import org.apache.xalan.lib.sql.ObjectArray;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.DataProvider;
 
 import com.vtiger.comcast.gereriUtility.ExeclUtility;
 import com.vtiger.comcast.gereriUtility.FileUtilfiy;
@@ -43,18 +45,23 @@ public class CreatenewOrganization {
 
 
 
-	public void createOrg_with_Indurty(String orgName) {
+	public void createOrg_with_Indurty(String orgName, String IndutrsyType ) {
 		WebDriverUtility wdlib = new WebDriverUtility();
+		selectInd.sendKeys(IndutrsyType);
 		orgNameEdt.sendKeys(orgName);
-		wdlib.select(selectInd, "Construction");
+		wdlib.select(selectInd, IndutrsyType);
 		saveBtn.click();
+		
+		
+		
 		
 		
 	}
 	
+}
 	
 	
 	
 	
 
-}
+
