@@ -65,7 +65,7 @@ public class Create_contact_Test extends basic_annotations {
 	}
 		
 		@Test(groups={"regressionTest"})
-		public void createContactWithOrg() throws Throwable {
+		public void createContactWithOrgTest() throws Throwable {
 		
 			/*test data*/
 			int randomInt = jlib.getRandomNumber();

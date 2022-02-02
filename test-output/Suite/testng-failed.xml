@@ -4,17 +4,17 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
-        <include name="smokeTest"/>
+        <include name="regressionTest"/>
       </run>
     </groups>
     <classes>
       <class name="com.vtiger.comcast.organizationtest.CreateOrgTest">
         <methods>
-          <include name="createOrgTest"/>
           <include name="configAM"/>
           <include name="configBM"/>
           <include name="configAS"/>
           <include name="configAC"/>
+          <include name="createOrgWithInduTest"/>
           <include name="configsBS"/>
           <include name="configBC"/>
         </methods>
@@ -27,7 +27,7 @@
           <include name="configAC"/>
           <include name="configsBS"/>
           <include name="configBC"/>
-          <include name="createContactTest"/>
+          <include name="createContactWithOrgTest"/>
         </methods>
       </class> <!-- com.vtiger.comcast.contact.test.Create_contact_Test -->
     </classes>

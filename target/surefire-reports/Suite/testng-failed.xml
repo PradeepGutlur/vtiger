@@ -8,17 +8,6 @@
       </run>
     </groups>
     <classes>
-      <class name="com.vtiger.comcast.contact.test.Create_contact_Test">
-        <methods>
-          <include name="configAM"/>
-          <include name="configBM"/>
-          <include name="configBC"/>
-          <include name="configsBS"/>
-          <include name="configAS"/>
-          <include name="configAC"/>
-          <include name="createContactTest"/>
-        </methods>
-      </class> <!-- com.vtiger.comcast.contact.test.Create_contact_Test -->
       <class name="com.vtiger.comcast.organizationtest.CreateOrgTest">
         <methods>
           <include name="createOrgTest"/>

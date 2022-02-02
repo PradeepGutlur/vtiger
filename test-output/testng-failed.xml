@@ -1,9 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="regressionTest"/>
+      </run>
+    </groups>
     <classes>
-      <class name="com.vtiger.comcast.organizationtest.Create_Org_Data_Test">
+      <class name="com.vtiger.comcast.organizationtest.CreateOrgTest">
+        <methods>
+          <include name="configAM"/>
+          <include name="configBM"/>
+          <include name="configAS"/>
+          <include name="configAC"/>
+          <include name="createOrgWithInduTest"/>
+          <include name="configsBS"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.vtiger.comcast.organizationtest.CreateOrgTest -->
+      <class name="com.vtiger.comcast.contact.test.Create_contact_Test">
         <methods>
           <include name="configAM"/>
           <include name="configBM"/>
@@ -11,9 +27,9 @@
           <include name="configAC"/>
           <include name="configsBS"/>
           <include name="configBC"/>
-          <include name="createorg" invocation-numbers="0"/>
+          <include name="createContactWithOrgTest"/>
         </methods>
-      </class> <!-- com.vtiger.comcast.organizationtest.Create_Org_Data_Test -->
+      </class> <!-- com.vtiger.comcast.contact.test.Create_contact_Test -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

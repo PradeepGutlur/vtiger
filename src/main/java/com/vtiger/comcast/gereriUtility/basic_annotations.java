@@ -10,15 +10,9 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Parameters;
 
 import com.vtiger.comcast.business.gerenic.Home;
 import com.vtiger.comcast.business.gerenic.Login;
-import com.vtiger.comcast.gereriUtility.ExeclUtility;
-import com.vtiger.comcast.gereriUtility.FileUtilfiy;
-import com.vtiger.comcast.gereriUtility.JavaUtility;
-import com.vtiger.comcast.gereriUtility.WebDriverUtility;
-
 
 public class basic_annotations {
 	

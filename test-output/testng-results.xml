@@ -1,29 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="56980" started-at="2022-02-02T14:53:11Z" finished-at="2022-02-02T14:54:08Z">
+  <suite name="Default suite" duration-ms="81031" started-at="2022-02-02T19:03:24Z" finished-at="2022-02-02T19:04:45Z">
     <groups>
+      <group name="regressionTest">
+        <method signature="CreateOrgTest.createOrgWithInduTest()[pri:0, instance:com.vtiger.comcast.organizationtest.CreateOrgTest@5f9d02cb]" name="createOrgWithInduTest" class="com.vtiger.comcast.organizationtest.CreateOrgTest"/>
+      </group> <!-- regressionTest -->
+      <group name="smokeTest">
+        <method signature="CreateOrgTest.createOrgTest()[pri:0, instance:com.vtiger.comcast.organizationtest.CreateOrgTest@5f9d02cb]" name="createOrgTest" class="com.vtiger.comcast.organizationtest.CreateOrgTest"/>
+      </group> <!-- smokeTest -->
     </groups>
-    <test name="Default test" duration-ms="56980" started-at="2022-02-02T14:53:11Z" finished-at="2022-02-02T14:54:08Z">
-      <class name="com.vtiger.comcast.organizationtest.Create_Org_Data_Test">
-        <test-method status="PASS" signature="configsBS()[pri:0, instance:com.vtiger.comcast.organizationtest.Create_Org_Data_Test@5f9d02cb]" name="configsBS" is-config="true" duration-ms="16" started-at="2022-02-02T14:53:11Z" finished-at="2022-02-02T14:53:11Z">
+    <test name="Default test" duration-ms="81031" started-at="2022-02-02T19:03:24Z" finished-at="2022-02-02T19:04:45Z">
+      <class name="com.vtiger.comcast.organizationtest.CreateOrgTest">
+        <test-method status="PASS" signature="configsBS()[pri:0, instance:com.vtiger.comcast.organizationtest.CreateOrgTest@5f9d02cb]" name="configsBS" is-config="true" duration-ms="16" started-at="2022-02-02T19:03:24Z" finished-at="2022-02-02T19:03:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configsBS -->
-        <test-method status="PASS" signature="configBC()[pri:0, instance:com.vtiger.comcast.organizationtest.Create_Org_Data_Test@5f9d02cb]" name="configBC" is-config="true" duration-ms="2528" started-at="2022-02-02T14:53:11Z" finished-at="2022-02-02T14:53:14Z">
+        <test-method status="PASS" signature="configBC()[pri:0, instance:com.vtiger.comcast.organizationtest.CreateOrgTest@5f9d02cb]" name="configBC" is-config="true" duration-ms="2387" started-at="2022-02-02T19:03:24Z" finished-at="2022-02-02T19:03:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method status="PASS" signature="configBM()[pri:0, instance:com.vtiger.comcast.organizationtest.Create_Org_Data_Test@5f9d02cb]" name="configBM" is-config="true" duration-ms="5686" started-at="2022-02-02T14:53:15Z" finished-at="2022-02-02T14:53:20Z">
+        <test-method status="PASS" signature="configBM()[pri:0, instance:com.vtiger.comcast.organizationtest.CreateOrgTest@5f9d02cb]" name="configBM" is-config="true" duration-ms="6401" started-at="2022-02-02T19:03:26Z" finished-at="2022-02-02T19:03:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method status="PASS" signature="createorg(java.lang.String, java.lang.String)[pri:0, instance:com.vtiger.comcast.organizationtest.Create_Org_Data_Test@5f9d02cb]" name="createorg" duration-ms="9794" started-at="2022-02-02T14:53:20Z" data-provider="createwithdata" finished-at="2022-02-02T14:53:30Z">
+        <test-method status="PASS" signature="createOrgTest()[pri:0, instance:com.vtiger.comcast.organizationtest.CreateOrgTest@5f9d02cb]" name="createOrgTest" duration-ms="8803" started-at="2022-02-02T19:03:32Z" finished-at="2022-02-02T19:03:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrgTest -->
+        <test-method status="PASS" signature="configAM()[pri:0, instance:com.vtiger.comcast.organizationtest.CreateOrgTest@5f9d02cb]" name="configAM" is-config="true" duration-ms="1285" started-at="2022-02-02T19:03:41Z" finished-at="2022-02-02T19:03:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method status="PASS" signature="configBM()[pri:0, instance:com.vtiger.comcast.organizationtest.CreateOrgTest@5f9d02cb]" name="configBM" is-config="true" duration-ms="2252" started-at="2022-02-02T19:03:43Z" finished-at="2022-02-02T19:03:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method status="PASS" signature="createOrgWithInduTest()[pri:0, instance:com.vtiger.comcast.organizationtest.CreateOrgTest@5f9d02cb]" name="createOrgWithInduTest" duration-ms="8960" started-at="2022-02-02T19:03:45Z" finished-at="2022-02-02T19:03:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrgWithInduTest -->
+        <test-method status="PASS" signature="configAM()[pri:0, instance:com.vtiger.comcast.organizationtest.CreateOrgTest@5f9d02cb]" name="configAM" is-config="true" duration-ms="1285" started-at="2022-02-02T19:03:54Z" finished-at="2022-02-02T19:03:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method status="PASS" signature="configBM()[pri:0, instance:com.vtiger.comcast.organizationtest.CreateOrgTest@5f9d02cb]" name="configBM" is-config="true" duration-ms="2244" started-at="2022-02-02T19:03:55Z" finished-at="2022-02-02T19:03:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method status="PASS" signature="createorgTest(java.lang.String, java.lang.String)[pri:0, instance:com.vtiger.comcast.organizationtest.CreateOrgTest@5f9d02cb]" name="createorgTest" duration-ms="8412" started-at="2022-02-02T19:03:58Z" data-provider="createwithdata" finished-at="2022-02-02T19:04:06Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[ranemad161]]>
+                <![CDATA[ranemad178]]>
               </value>
             </param>
             <param index="1">
@@ -34,20 +64,20 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createorg -->
-        <test-method status="PASS" signature="configAM()[pri:0, instance:com.vtiger.comcast.organizationtest.Create_Org_Data_Test@5f9d02cb]" name="configAM" is-config="true" duration-ms="1138" started-at="2022-02-02T14:53:30Z" finished-at="2022-02-02T14:53:31Z">
+        </test-method> <!-- createorgTest -->
+        <test-method status="PASS" signature="configAM()[pri:0, instance:com.vtiger.comcast.organizationtest.CreateOrgTest@5f9d02cb]" name="configAM" is-config="true" duration-ms="1082" started-at="2022-02-02T19:04:06Z" finished-at="2022-02-02T19:04:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method status="PASS" signature="configBM()[pri:0, instance:com.vtiger.comcast.organizationtest.Create_Org_Data_Test@5f9d02cb]" name="configBM" is-config="true" duration-ms="2311" started-at="2022-02-02T14:53:31Z" finished-at="2022-02-02T14:53:34Z">
+        <test-method status="PASS" signature="configBM()[pri:0, instance:com.vtiger.comcast.organizationtest.CreateOrgTest@5f9d02cb]" name="configBM" is-config="true" duration-ms="2148" started-at="2022-02-02T19:04:07Z" finished-at="2022-02-02T19:04:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method status="PASS" signature="createorg(java.lang.String, java.lang.String)[pri:0, instance:com.vtiger.comcast.organizationtest.Create_Org_Data_Test@5f9d02cb]" name="createorg" duration-ms="8603" started-at="2022-02-02T14:53:34Z" data-provider="createwithdata" finished-at="2022-02-02T14:53:42Z">
+        <test-method status="PASS" signature="createorgTest(java.lang.String, java.lang.String)[pri:0, instance:com.vtiger.comcast.organizationtest.CreateOrgTest@5f9d02cb]" name="createorgTest" duration-ms="8669" started-at="2022-02-02T19:04:09Z" data-provider="createwithdata" finished-at="2022-02-02T19:04:18Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[kalki120]]>
+                <![CDATA[kalki404]]>
               </value>
             </param>
             <param index="1">
@@ -58,20 +88,20 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createorg -->
-        <test-method status="PASS" signature="configAM()[pri:0, instance:com.vtiger.comcast.organizationtest.Create_Org_Data_Test@5f9d02cb]" name="configAM" is-config="true" duration-ms="1209" started-at="2022-02-02T14:53:42Z" finished-at="2022-02-02T14:53:43Z">
+        </test-method> <!-- createorgTest -->
+        <test-method status="PASS" signature="configAM()[pri:0, instance:com.vtiger.comcast.organizationtest.CreateOrgTest@5f9d02cb]" name="configAM" is-config="true" duration-ms="1232" started-at="2022-02-02T19:04:18Z" finished-at="2022-02-02T19:04:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method status="PASS" signature="configBM()[pri:0, instance:com.vtiger.comcast.organizationtest.Create_Org_Data_Test@5f9d02cb]" name="configBM" is-config="true" duration-ms="2225" started-at="2022-02-02T14:53:43Z" finished-at="2022-02-02T14:53:46Z">
+        <test-method status="PASS" signature="configBM()[pri:0, instance:com.vtiger.comcast.organizationtest.CreateOrgTest@5f9d02cb]" name="configBM" is-config="true" duration-ms="2588" started-at="2022-02-02T19:04:19Z" finished-at="2022-02-02T19:04:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method status="PASS" signature="createorg(java.lang.String, java.lang.String)[pri:0, instance:com.vtiger.comcast.organizationtest.Create_Org_Data_Test@5f9d02cb]" name="createorg" duration-ms="8140" started-at="2022-02-02T14:53:46Z" data-provider="createwithdata" finished-at="2022-02-02T14:53:54Z">
+        <test-method status="PASS" signature="createorgTest(java.lang.String, java.lang.String)[pri:0, instance:com.vtiger.comcast.organizationtest.CreateOrgTest@5f9d02cb]" name="createorgTest" duration-ms="8364" started-at="2022-02-02T19:04:22Z" data-provider="createwithdata" finished-at="2022-02-02T19:04:30Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[mvt163]]>
+                <![CDATA[mvt106]]>
               </value>
             </param>
             <param index="1">
@@ -82,20 +112,20 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createorg -->
-        <test-method status="PASS" signature="configAM()[pri:0, instance:com.vtiger.comcast.organizationtest.Create_Org_Data_Test@5f9d02cb]" name="configAM" is-config="true" duration-ms="1113" started-at="2022-02-02T14:53:54Z" finished-at="2022-02-02T14:53:55Z">
+        </test-method> <!-- createorgTest -->
+        <test-method status="PASS" signature="configAM()[pri:0, instance:com.vtiger.comcast.organizationtest.CreateOrgTest@5f9d02cb]" name="configAM" is-config="true" duration-ms="1449" started-at="2022-02-02T19:04:30Z" finished-at="2022-02-02T19:04:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method status="PASS" signature="configBM()[pri:0, instance:com.vtiger.comcast.organizationtest.Create_Org_Data_Test@5f9d02cb]" name="configBM" is-config="true" duration-ms="2318" started-at="2022-02-02T14:53:55Z" finished-at="2022-02-02T14:53:57Z">
+        <test-method status="PASS" signature="configBM()[pri:0, instance:com.vtiger.comcast.organizationtest.CreateOrgTest@5f9d02cb]" name="configBM" is-config="true" duration-ms="2317" started-at="2022-02-02T19:04:32Z" finished-at="2022-02-02T19:04:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method status="PASS" signature="createorg(java.lang.String, java.lang.String)[pri:0, instance:com.vtiger.comcast.organizationtest.Create_Org_Data_Test@5f9d02cb]" name="createorg" duration-ms="9034" started-at="2022-02-02T14:53:57Z" data-provider="createwithdata" finished-at="2022-02-02T14:54:06Z">
+        <test-method status="PASS" signature="createorgTest(java.lang.String, java.lang.String)[pri:0, instance:com.vtiger.comcast.organizationtest.CreateOrgTest@5f9d02cb]" name="createorgTest" duration-ms="8827" started-at="2022-02-02T19:04:34Z" data-provider="createwithdata" finished-at="2022-02-02T19:04:43Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[madars544]]>
+                <![CDATA[madars889]]>
               </value>
             </param>
             <param index="1">
@@ -106,20 +136,20 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createorg -->
-        <test-method status="PASS" signature="configAM()[pri:0, instance:com.vtiger.comcast.organizationtest.Create_Org_Data_Test@5f9d02cb]" name="configAM" is-config="true" duration-ms="1142" started-at="2022-02-02T14:54:06Z" finished-at="2022-02-02T14:54:07Z">
+        </test-method> <!-- createorgTest -->
+        <test-method status="PASS" signature="configAM()[pri:0, instance:com.vtiger.comcast.organizationtest.CreateOrgTest@5f9d02cb]" name="configAM" is-config="true" duration-ms="1202" started-at="2022-02-02T19:04:43Z" finished-at="2022-02-02T19:04:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method status="PASS" signature="configAC()[pri:0, instance:com.vtiger.comcast.organizationtest.Create_Org_Data_Test@5f9d02cb]" name="configAC" is-config="true" duration-ms="656" started-at="2022-02-02T14:54:07Z" finished-at="2022-02-02T14:54:08Z">
+        <test-method status="PASS" signature="configAC()[pri:0, instance:com.vtiger.comcast.organizationtest.CreateOrgTest@5f9d02cb]" name="configAC" is-config="true" duration-ms="738" started-at="2022-02-02T19:04:44Z" finished-at="2022-02-02T19:04:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->
-        <test-method status="PASS" signature="configAS()[pri:0, instance:com.vtiger.comcast.organizationtest.Create_Org_Data_Test@5f9d02cb]" name="configAS" is-config="true" duration-ms="0" started-at="2022-02-02T14:54:08Z" finished-at="2022-02-02T14:54:08Z">
+        <test-method status="PASS" signature="configAS()[pri:0, instance:com.vtiger.comcast.organizationtest.CreateOrgTest@5f9d02cb]" name="configAS" is-config="true" duration-ms="0" started-at="2022-02-02T19:04:45Z" finished-at="2022-02-02T19:04:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAS -->
-      </class> <!-- com.vtiger.comcast.organizationtest.Create_Org_Data_Test -->
+      </class> <!-- com.vtiger.comcast.organizationtest.CreateOrgTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

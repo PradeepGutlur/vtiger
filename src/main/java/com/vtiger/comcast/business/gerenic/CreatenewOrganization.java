@@ -13,10 +13,12 @@ import com.vtiger.comcast.gereriUtility.JavaUtility;
 import com.vtiger.comcast.gereriUtility.WebDriverUtility;
 
 public class CreatenewOrganization {
+	WebDriverUtility wdlib = new WebDriverUtility();
 
 	public CreatenewOrganization(WebDriver driver){
 	
 		PageFactory.initElements(driver, this);
+	
 	
 	}
 	@FindBy(name="accountname")
@@ -43,21 +45,20 @@ public class CreatenewOrganization {
 			
 	}
 
-
-
-	public void createOrg_with_Indurty(String orgName, String IndutrsyType ) {
-		WebDriverUtility wdlib = new WebDriverUtility();
+	public void createOrg_with_Indurtydata(String orgName, String IndutrsyType ) {
+		
 		selectInd.sendKeys(IndutrsyType);
 		orgNameEdt.sendKeys(orgName);
 		wdlib.select(selectInd, IndutrsyType);
 		saveBtn.click();
 		
-		
-		
-		
-		
 	}
+	public void createOrg_with_Indurty(String orgName) {
 	
+		orgNameEdt.sendKeys(orgName);
+		wdlib.select(selectInd, "Education");
+		saveBtn.click();
+	}
 }
 	
 	

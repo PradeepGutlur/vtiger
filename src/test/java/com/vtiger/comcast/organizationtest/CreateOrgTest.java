@@ -26,7 +26,7 @@ import com.vtiger.comcast.gereriUtility.basic_annotations;
 public class CreateOrgTest extends basic_annotations {
 	
 	
-	private static final String IndutrsyType = null;
+	
 
 	@Test(groups={"smokeTest"})
 	public void createOrgTest() throws Throwable {
@@ -60,7 +60,7 @@ public class CreateOrgTest extends basic_annotations {
 	}
 	
 	@Test(groups ={"regressionTest"})
-	public void createOrgWithIndu() throws Throwable {
+	public void createOrgWithInduTest() throws Throwable {
 	
 		/*test data*/
 		int randomInt = jlib.getRandomNumber();
@@ -77,7 +77,7 @@ public class CreateOrgTest extends basic_annotations {
 
 	//step 5 create org 
 	CreatenewOrganization corg =new CreatenewOrganization(driver);
-	corg.createOrg_with_Indurty(orgName,IndutrsyType );
+	corg.createOrg_with_Indurty(orgName);
 
 	//step 6 verify the create org
 	OrganizationInfo orginf = new OrganizationInfo(driver);
@@ -86,7 +86,7 @@ public class CreateOrgTest extends basic_annotations {
 	
 	}
 	@Test(dataProvider="createwithdata")
-	public void createorg(String orgName, String IndutrsyType) throws Throwable {
+	public void createorgTest(String orgName, String IndutrsyType) throws Throwable {
 
 		//step 3 navigate to org
 		Home hp = new Home(driver);
@@ -97,7 +97,7 @@ public class CreateOrgTest extends basic_annotations {
 		org.getCreateorgIcon().click();
 		
 		CreatenewOrganization corg =new CreatenewOrganization(driver);
-		corg.createOrg_with_Indurty(orgName, IndutrsyType);
+		corg.createOrg_with_Indurtydata(orgName, IndutrsyType);
 		
 		
 		

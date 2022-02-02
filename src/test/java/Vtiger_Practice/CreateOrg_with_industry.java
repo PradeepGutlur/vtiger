@@ -67,7 +67,7 @@ public class CreateOrg_with_industry {
 
 		//step 5 create org 
 		CreatenewOrganization corg =new CreatenewOrganization(driver);
-		corg.createOrg_with_Indurty(orgName);
+		corg.createOrg(orgName);
 	
 		
 		
